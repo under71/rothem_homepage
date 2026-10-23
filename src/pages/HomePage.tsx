@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import PerformanceCounter from '../components/PerformanceCounter';
 import SolutionShowcase from '../components/SolutionShowcase';
+import SecurityToolsSection from '../components/SecurityToolsSection';
 import CaseStudiesSection from '../components/CaseStudiesSection';
 import DailyThreatSection from '../components/DailyThreatSection';
 import CEOMessage from '../components/CEOMessage';
@@ -53,6 +54,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <SecurityToolsSection />
         <PerformanceCounter />
         <SolutionShowcase />
         <CaseStudiesSection />
