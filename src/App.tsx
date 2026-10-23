@@ -23,6 +23,7 @@ import { SettingsProvider } from './context/SettingsContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { HelmetProvider } from 'react-helmet-async';
 import FloatingButtons from './components/FloatingButtons';
+import SecurityAlertPopup from './components/SecurityAlertPopup';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -60,6 +61,7 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/checklist" element={<ChecklistPage />} />
           </Routes>
+          <SecurityAlertPopup />
           <FloatingButtons />
         </BrowserRouter>
       </SettingsProvider>

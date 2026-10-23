@@ -96,7 +96,15 @@ service cloud.firestore {
         && data.date is string && data.date.size() <= 20
         && data.createdAt is timestamp
         && (!data.keys().hasAll(['status']) || (data.status is string && data.status in ['draft', 'published', 'archived']))
-        && (!data.keys().hasAll(['createdBy']) || (data.createdBy is string && data.createdBy.size() <= 100));
+        && (!data.keys().hasAll(['createdBy']) || (data.createdBy is string && data.createdBy.size() <= 100))
+        // CVSS 8+ popup fields (optional)
+        && (!data.keys().hasAll(['cvssScore']) || (data.cvssScore is number && data.cvssScore >= 0 && data.cvssScore <= 10))
+        && (!data.keys().hasAll(['isPopup']) || data.isPopup is bool)
+        && (!data.keys().hasAll(['popupExpiry']) || (data.popupExpiry is string && data.popupExpiry.size() <= 20))
+        && (!data.keys().hasAll(['sourceUrl']) || (data.sourceUrl is string && data.sourceUrl.size() <= 1000))
+        && (!data.keys().hasAll(['youtubeUrl']) || (data.youtubeUrl is string && data.youtubeUrl.size() <= 200))
+        && (!data.keys().hasAll(['cveIds']) || data.cveIds is list)
+        && (!data.keys().hasAll(['ainewsId']) || (data.ainewsId is string && data.ainewsId.size() <= 200));
     }
 
     match /insights/{insightId} {
