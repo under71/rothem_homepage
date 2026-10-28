@@ -157,24 +157,17 @@ export default function SecurityToolsSection() {
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-4">
             <a
-              href="mailto:paeyoung.park@gmail.com?subject=%5B%EB%B3%B4%EC%95%88%20%EB%8F%84%EA%B5%AC%20%EB%AC%B8%EC%9D%98%5D"
+              href="https://aegis.rothemsystem.com"
+              target="_blank"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white rounded-xl text-base font-extrabold shadow-[0_8px_24px_rgba(16,185,129,0.25)] transition-all hover:-translate-y-0.5"
             >
               <Shield size={18} />
-              도입 및 데모 문의
+              Aegis 상세 보기
               <ArrowRight size={16} />
             </a>
             <a
-              href="https://aegis.lupa.kr"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 px-6 py-3.5 border border-emerald-700 hover:border-emerald-500 text-emerald-300 hover:text-white rounded-xl text-sm font-bold transition-all"
-            >
-              Aegis 상세 보기
-              <ArrowRight size={14} />
-            </a>
-            <a
-              href="https://ares.lupa.kr"
+              href="https://ares.rothemsystem.com"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-2 px-6 py-3.5 border border-red-700 hover:border-red-500 text-red-300 hover:text-white rounded-xl text-sm font-bold transition-all"
