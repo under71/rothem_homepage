@@ -165,12 +165,21 @@ export default function SecurityToolsSection() {
               <ArrowRight size={16} />
             </a>
             <a
-              href="https://apps.lupa.kr/#aegis"
+              href="https://aegis.lupa.kr"
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-2 px-6 py-3.5 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-xl text-sm font-bold transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border border-emerald-700 hover:border-emerald-500 text-emerald-300 hover:text-white rounded-xl text-sm font-bold transition-all"
             >
-              상세 소개 보기
+              Aegis 상세 보기
+              <ArrowRight size={14} />
+            </a>
+            <a
+              href="https://ares.lupa.kr"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border border-red-700 hover:border-red-500 text-red-300 hover:text-white rounded-xl text-sm font-bold transition-all"
+            >
+              ARES 상세 보기
               <ArrowRight size={14} />
             </a>
           </div>
